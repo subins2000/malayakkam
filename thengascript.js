@@ -15,6 +15,7 @@ const coreLangKeywords = {
     "എണ്ണല്‍": "enum",
     "എത്തരം": "typeof",
     "എന്നിരിക്കെ": "while",
+    "ന്റെസൂചിക": "indexOf",
     "ഒടുവിൽ": "finally",
     "ഒപ്പം": "with",
     "കയറ്റുമതി": "export",
