@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <meta charset="utf-8"></meta>
+    <title>മലയക്കം - ഇംഗ്ലീഷ് അക്കങ്ങളെ മലയാള അക്കങ്ങള്‍ ആക്കുക</title>
+    <script type="text/javascript" src="thengascript.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu|Manjari&display=swap" rel="stylesheet" async="async" />
+  </head>
+  <body>
+    <h1>മലയക്കം</h1>
+    <p>Encode<br/>
+    <textarea id="വാക്യം" placeholder="ഇംഗ്ലീഷ് അക്കമുള്ള വാക്യം ഇവിടെ എഴുതുക"></textarea>
+    <textarea id="മാറ്റിയവാക്യം" placeholder="മലയാള അക്കത്തിലേക്ക് മാറ്റിയ വാക്യം ഇവിടെ ദൃശ്യമാകും"></textarea>
+    </p>
+    <p>Decode<br/>
+    <textarea id="മലയാളവാക്യം" placeholder="മലയാള അക്കമുള്ള വാക്യം ഇവിടെ എഴുതുക"></textarea>
+    <textarea id="ഇംഗ്ലീഷിലേക്ക്മാറ്റിയവാക്യം" placeholder="ഇംഗ്ലീഷ് അക്കത്തിലേക്ക് മാറ്റിയ വാക്യം ഇവിടെ ദൃശ്യമാകും"></textarea>
+    </p>
+    <script type="text/thengascript" src="malayakkam.js"></script>
+    <script type="text/thengascript">
+      ആവട്ടെ വാക്യസ്ഥലം = document.getElementById('വാക്യം'),
+            മാറ്റിയവാക്യസ്ഥലം = document.getElementById('മാറ്റിയവാക്യം');
+      വാക്യസ്ഥലം.addEventListener('keyup', () => {
+        മാറ്റിയവാക്യസ്ഥലം.value = മലയക്കം(വാക്യസ്ഥലം.value);
+      });
+      
+      വാക്യസ്ഥലം = document.getElementById('മലയാളവാക്യം');
+      മാറ്റിയവാക്യസ്ഥലം = document.getElementById('ഇംഗ്ലീഷിലേക്ക്മാറ്റിയവാക്യം');
+      വാക്യസ്ഥലം.addEventListener('keyup', () => {
+        മാറ്റിയവാക്യസ്ഥലം.value = ഇനക്കം(വാക്യസ്ഥലം.value);
+      });
+    </script>
+    <style>
+    body {
+      font-family: Ubuntu, Manjari;
+    }
+    textarea {
+      min-height: 6em;
+      min-width: 10em;
+      font-size: 1.5rem;
+    }
+    </style>
+  </body>
+</html>
